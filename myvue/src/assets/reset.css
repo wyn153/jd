@@ -1,0 +1,86 @@
+/* 移动端
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ */
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+fieldset,
+legend,
+textarea,
+figcaption,
+figure{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+b,
+strong {
+  font-weight: 500;
+}
+em,
+i {
+  font-style: normal;
+}
+input,
+fieldset {
+  outline: none;
+  border: 0;
+}
+img {
+  display: block;
+  border: none;
+}
+input,textarea{
+  outline: none;
+}
+.clear_fix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clear_fix {
+  zoom: 1;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}

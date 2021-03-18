@@ -1,0 +1,9 @@
+打开登录注册  sql页面   nodemon adminInsert.js
+
+在package.json 中查找
+
+打开接口      npm run  adc
+		http://localhost/3000/apidoc
+
+开启后端 npm start 
+		http://localhost/3000

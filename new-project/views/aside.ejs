@@ -1,0 +1,55 @@
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar"></section>
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+        <% var data = [{
+            index:0,
+            icon:"fa-home",
+            title:"首页",
+            path:"/",
+            power:1
+        },{
+            index:1,
+            icon:"fa-hourglass-o",
+            title:"商品信息",
+            path:"/pro",
+            power:1
+        },{
+            index:2,
+            icon:"fa-file-image-o",
+            title:"轮播图",
+            path:"/banner",
+            power:1
+        },{
+            index:3,
+            icon:"fa-user",
+            title:"用户信息",
+            path:"/user",
+            power:0
+        },{
+            index:4,
+            icon:"fa-reorder",
+            title:"订单信息",
+            path:"/order",
+            power:0
+        },{
+            index:5,
+            icon:"fa-shopping-cart",
+            title:"购物车信息",
+            path:"/cart",
+            power:0
+        }] %>
+
+        <% for(var i=0;i<data.length;i++){ %>
+            <% if(power <= data[i].power){ %>
+                <li class=<%= index===data[i].index ? 'active' : '' %>><a href="<%= data[i].path %>"><i class="fa <%= data[i].icon%>"></i> <span><%= data[i].title %></span></a></li>
+            <% } %>
+        <% } %>
+        
+    </ul>
+    <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
